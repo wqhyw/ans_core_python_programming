@@ -18,4 +18,5 @@ def test():
     print "5 cent: ", ans[2]
     print "1 cent: ", ans[3]
 
-test()
+if __name__ == '__main__':
+    test()
