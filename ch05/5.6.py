@@ -24,7 +24,7 @@ def getexpression():
             lefttype = isnumber(left)
             righttype = isnumber(right)
 
-            if isnumber(left) and isnumber(right):
+            if isnumber(left) and isnumber(right)
             //TODO
 
 
