@@ -1,4 +1,4 @@
-# ! /usr/bin/env python
+#! /usr/bin/env python
 
 def GCD(m, n):
     'get GCD of m, n'

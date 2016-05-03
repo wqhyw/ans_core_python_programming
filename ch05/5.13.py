@@ -1,4 +1,4 @@
-# ! /usr/bin/env python
+#! /usr/bin/env python
 
 def hourtomin(timebyhour):
     time = timebyhour.split(':')

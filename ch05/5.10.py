@@ -1,4 +1,4 @@
-# ! /usr/bin/env python
+#! /usr/bin/env python
 
 def CtoF(C):
     return C * 9 / float(5) + 32

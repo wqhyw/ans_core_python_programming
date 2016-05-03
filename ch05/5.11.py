@@ -1,4 +1,4 @@
-# ! /usr/bin/env python
+#! /usr/bin/env python
 
 # a) even num between 0 - 20
 for evens in xrange(0, 21, 2):
