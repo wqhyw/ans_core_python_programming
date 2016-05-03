@@ -1,25 +1,32 @@
 #!/usr/bin/env python
 
 import string
-# TODO
+import keyword
+
 alphas = string.letters + '_'
 nums = string.digits
 
-print 'Welcome to the Identifier Checker v1.0'
-print 'Testees must be at least 2 chars long.'
-inp = raw_input('Identifier to test? ')
+print 'Welcome to the Identifier Checker v2.0'
 
-if len(inp) > 1:
+inp = raw_input('Identifier to test: ')
 
+if keyword.iskeyword(inp):
+    print "Invalid: it is a python keyword"
+else:
     if inp[0] not in alphas:
-        print '''invalid: first symbol must be
-	  alphabetic'''
+            print "Invalid: first symbol must be alphabetic or _"
     else:
-        for otherChar in inp[1:]:
-
-            if otherChar not in alphas + nums:
-                print '''invalid: remaining
-		  symbols must be alphanumeric'''
-                break
-        else:
-            print "okay as an identifier"
+        if len(inp) > 1:
+            for otherChar in inp[1:]:
+                if otherChar not in alphas + nums:
+                    print "Invalid: remaining symbols must be alphanumeric"
+                    break
+                else:
+                    print "Okay as an identifier"
+        elif len(inp) == 1:
+            if inp in string.letters:
+                print "Okay as an identifier"
+            elif inp == '_':
+                print "Invalid: _ is not an identifier"
+            elif inp in nums:
+                print "Invalid: first symbol must be alphabetic or _"

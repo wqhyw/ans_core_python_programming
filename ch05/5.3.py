@@ -10,9 +10,9 @@ def getevaluate(grade):
     elif grade >=70:
         return 'C'
     elif grade >=60:
-        return 'E'
+        return 'D'
     else:
-        return 'F'
+        return 'E'
 
 def test():
     print getevaluate(75)
