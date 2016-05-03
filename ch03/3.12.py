@@ -5,7 +5,7 @@
 """
 Created on Fri Mar 11 19:31:58 2016
 
-@program: RnMTextFile.py -- create, read and displaytext file
+@program: RnMTextFile.py -- create, read and display text file
 
 @author: LeO_wqHyw
 """

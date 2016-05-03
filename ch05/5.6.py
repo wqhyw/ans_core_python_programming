@@ -1,5 +1,4 @@
-# ! /usr/bin/env python
-
+#! /usr/bin/env python
 
 def isnumber(num):
     'Check num is a integer or float'

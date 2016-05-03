@@ -6,6 +6,8 @@ while cnt < 11:
     print cnt,
     cnt += 1
 
+print
+
 # b) Codes Below:
 for num in range(11):
     print num,

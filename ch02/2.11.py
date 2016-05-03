@@ -34,4 +34,5 @@ def test():
         else:
             print "input error, please try again."
 
-test();
+if __name__ == '__main__':
+    test()

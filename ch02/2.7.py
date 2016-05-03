@@ -8,6 +8,8 @@ strs_len = len(strs)
 for index in xrange(strs_len):
     print strs[index],
 
+print
+
 # b) By while:
 cnt = 0;
 

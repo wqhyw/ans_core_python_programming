@@ -11,6 +11,7 @@ elif num < 0:
 else:
     print "Input error."
 
+print
 
 # b) Codes Below:
 num = int(raw_input("Input a integer: "))
