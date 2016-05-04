@@ -23,28 +23,39 @@ def geteng(num):
         17: 'seventeen', 18: 'eighteen', 19: 'nineteen', 20: 'twenty',
         30: 'thirty', 40: 'fourty', 50: 'fifty', 60: 'sixty',
         70: 'seventy', 80: 'eighty', 90: 'ninety',
-        0: 'zero', 100: 'hundred', 1000: 'thousand',
+        0: 'zero', 1000: 'one thousand'
     }
 
     def handledozens(dozens):
         'handle integer between 10 - 99'
 
         if dozens in bases:
-            return bases[dozens]
+            if dozens != 0:
+                return bases[dozens]
+            else:
+                return ''
         else:
-            dozen = (dozens // 10) * 10
-
-            return bases[(dozens // 10) * 10] + bases[]
-
-
-
+            decade = (dozens // 10) * 10
+            unit = dozens - decade
+            return bases[decade] + '-' + bases[unit]
 
     if num in bases:
         return bases[num]
     else:
         # num < 1000 and num > 20 and num % 10 != 0
 
+        hundreds = num // 100
+        if hundreds != 0:
+            dozens = num - hundreds * 100
+            isand = ' and ' if handledozens(dozens) != '' else ''
+            return bases[hundreds] + ' hundred' + isand + handledozens(dozens)
+        else:
+            return handledozens(num)
 
 
+def test():
+    print geteng(getinp())
 
 
+if __name__ == '__main__':
+    test()
