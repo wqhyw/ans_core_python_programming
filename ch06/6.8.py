@@ -5,10 +5,10 @@ def getinp():
 
     while True:
         inp = raw_input("Input an integer between 0 and 1000(boundary included): ")
-        if inp.isdigit() == False:
-            print "Only integer is valid. Please try again."
-        else:
+        if inp.isdigit():
             return int(inp)
+        else:
+            print "Only integer is valid. Please try again."
 
 
 def geteng(num):
@@ -36,7 +36,7 @@ def geteng(num):
                 return ''
         else:
             decade = (dozens // 10) * 10
-            unit = dozens - decade
+            unit = dozens % 10
             return bases[decade] + '-' + bases[unit]
 
     if num in bases:
@@ -46,7 +46,7 @@ def geteng(num):
 
         hundreds = num // 100
         if hundreds != 0:
-            dozens = num - hundreds * 100
+            dozens = num % 100
             isand = ' and ' if handledozens(dozens) != '' else ''
             return bases[hundreds] + ' hundred' + isand + handledozens(dozens)
         else:
