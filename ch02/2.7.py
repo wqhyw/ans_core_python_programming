@@ -1,18 +1,15 @@
 #! /usr/bin/env python
 
-strs = raw_input("Input a string: ")
-
-strs_len = len(strs)
+strs = list(raw_input("Input a string: "))
 
 # a) By for:
-for index in xrange(strs_len):
-    print strs[index],
+print ' '.join(strs)
 
 print
 
 # b) By while:
 cnt = 0;
 
-while cnt < strs_len:
+while cnt < len(strs):
     print strs[cnt],
     cnt += 1
