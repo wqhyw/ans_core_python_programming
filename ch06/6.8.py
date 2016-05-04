@@ -26,12 +26,25 @@ def geteng(num):
         0: 'zero', 100: 'hundred', 1000: 'thousand',
     }
 
+    def handledozens(dozens):
+        'handle integer between 10 - 99'
+
+        if dozens in bases:
+            return bases[dozens]
+        else:
+            dozen = (dozens // 10) * 10
+
+            return bases[(dozens // 10) * 10] + bases[]
+
+
+
+
     if num in bases:
         return bases[num]
     else:
         # num < 1000 and num > 20 and num % 10 != 0
-        # TODO
-        pass
+
+
 
 
 
