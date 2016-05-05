@@ -1,24 +1,33 @@
 #! /usr/bin/env python
 
 def getsum(src):
+
     sum = 0
     for num in src:
         sum += num
     return sum
 
+
 def getavg(src):
+
     sum = getsum(src)
     avg = float(sum) / len(src)
     return avg
 
+
 def printmenu():
+
     print "MENU: "
     print "1. input"
     print "2. getsum"
     print "3. getavg"
     print "x. exit"
 
-def test():
+
+
+def main():
+    """main function"""
+
     src = []
     while True:
         printmenu()
@@ -34,5 +43,6 @@ def test():
         else:
             print "input error, please try again."
 
+
 if __name__ == '__main__':
-    test()
+    main()

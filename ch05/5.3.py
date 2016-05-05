@@ -1,21 +1,30 @@
 #! /usr/bin/env python
 
-def getevaluate(grade):
-    if grade < 0 or grade > 100:
-        return 'ERROR'
-    elif grade <= 100 and grade >= 90:
+def getegrade(score):
+    """
+    @program: get grade
+    @param: score
+    @tparam: int
+    @return: A or B or C or D or E
+    @rtype: char
+    """
+
+    if score < 0 or score > 100:
+        return None
+    elif score <= 100 and score >= 90:
         return 'A'
-    elif grade >=80:
+    elif score >=80:
         return 'B'
-    elif grade >=70:
+    elif score >=70:
         return 'C'
-    elif grade >=60:
+    elif score >=60:
         return 'D'
     else:
         return 'E'
 
+
 def test():
-    print getevaluate(75)
+    print getegrade(75)
 
 if __name__ == '__main__':
     test()

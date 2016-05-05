@@ -1,7 +1,12 @@
 #! /usr/bin/env python
 
 def snc(str1, str2):
-    'number in string campare'
+    """
+    @program: campare two string by dictionary
+    @param: srt1, str2
+    @tparam: string
+    @return: 1 for str1 > str2, -1 for str1 < str1, 0 for equal
+    """
 
     if str1.isdigit() and str2.isdigit():
         nlist1, nlist2 = list(str1), list(str2)
@@ -16,8 +21,6 @@ def snc(str1, str2):
                 pass
         else:
             return 0
-    else:
-        return None
 
 
 def main():

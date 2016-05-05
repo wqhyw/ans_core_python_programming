@@ -1,8 +1,14 @@
 #! /usr/bin/env python
 
 def ipcheck(ip, ctype=0):
-    'Check that if string ip is valid'
-    
+    """
+    @program: Check that if string is a valid ip
+    @param: ctype == 0 then ip => an ip address like www.xxx.yyy.zzz
+            ctype != 0 then ip => a hex-integer
+    @return: True for valid, False for invalid
+
+    """
+
     if ctype == 0:
         ip = ip.split('.')
         condition1 = (len(ip) == 4)
@@ -19,7 +25,14 @@ def ipcheck(ip, ctype=0):
 
 
 def iptobi(ip):
-    "make a valid ip address which like www.xxx.yyy.zzz to binary integer"
+    """
+    @program: make an ip address in dotted decimal notation to a hex-integer
+    @param: ip => an ip address in dotted decimal notation
+    @tparam: string
+    @return: ipint => a hex-integer
+             None => when param invalid
+    @rtype: string
+    """
 
     if ipcheck(ip):
         values = map(eval, ip.split('.'))
@@ -34,7 +47,14 @@ def iptobi(ip):
 
 
 def bitoip(ip):
-    'make a valid hex-integer to dotted decimal notation'
+    """
+    @program: make a hex-integer to an ip address in dotted decimal notation
+    @param: ip => a hex-integer
+    @tparam: string
+    @return: None => when param invalid
+             ip address in dotted decimal notation
+    @rtype: string
+    """
 
     if ipcheck(ip, 1):
 

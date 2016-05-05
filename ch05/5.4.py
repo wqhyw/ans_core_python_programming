@@ -1,6 +1,14 @@
 #! /usr/bin/env python
 
 def isleap(year):
+    """
+    @program: check leap or not
+    @param: year
+    @tparam: int
+    @return: True or False
+    @rtype: bool
+    """
+
     condition0 = (type(year) == type(1))
     condition1 = (year % 4 == 0) and (year % 100 != 0)
     condition2 = (year % 400 == 0)
@@ -13,6 +21,7 @@ def isleap(year):
     else:
         print year, "is invalid."
         return False
+
 
 def test():
     print isleap(2015)

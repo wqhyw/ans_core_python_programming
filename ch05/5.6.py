@@ -1,7 +1,13 @@
 #! /usr/bin/env python
 
 def isnumber(num):
-    'Check num is a integer or float'
+    """
+    @program: Check num is a integer or float
+    @param: num => a string only including number
+    @tparam: string
+    @return: 0 or 1 or 2
+    @rtype: int
+    """
 
     tmp = num.split('.')
     intcondition = (len(tmp) == 1) and tmp[0].isdigit()
@@ -16,7 +22,13 @@ def isnumber(num):
 
 
 def strtonum(str, strtype):
-    'string to number'
+    """
+    @program: transform string to number
+    @param: str => a string only including nummber
+            strtype => 0 for int, 1 for float
+    @return: nummber when succeed or None when failed
+    """
+
 
     if strtype == 1:
         return int(str)
@@ -27,7 +39,6 @@ def strtonum(str, strtype):
 
 
 def getexpression():
-    'Input a valid expreesion'
 
     while True:
         exp = raw_input("Input your expression: ").split()
@@ -44,7 +55,11 @@ def getexpression():
 
 
 def simplecal(expression):
-    'Calculate the expression'
+    """
+    @program: Calculate the expression like (x op y)
+    @param: expreesion => a valid expression like (x op y)
+    @return: result after calculated
+    """
 
     ops = {'+', '-', '*', '/', '%', '**'}
     left = expression[0]

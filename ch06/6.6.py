@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 
 def mystrip(str_s):
+
     slist = list(str_s)
     slist_r = slist[::-1]
     newslist = []

@@ -10,11 +10,15 @@ Created on Fri Mar 11 19:31:58 2016
 @author: LeO_wqHyw
 """
 
-# create part
 import os
 
+
 def get_fname():
-    'get_fname(): get filename'
+    """
+    @program: get filename
+    @return: filename
+    @rtype: string
+    """
 
     while True:
         fname = raw_input('input filename: ')
@@ -24,12 +28,16 @@ def get_fname():
             break
     return fname
 
+
 def get_content():
-    'get_content(): get file content (text) lines'
+    """
+    @program: get file content (text) lines
+    @return: all => all contents
+    @rtype: list
+    """
 
     all = []
     print "\nEnter lines ('.' by itself to quit).\n"
-    #loop until user terminates input
     while True:
         entry = raw_input('>> ')
         if entry == '.':
@@ -38,24 +46,38 @@ def get_content():
             all.append(entry)
     return all
 
+
 def create_file(fname):
-    'create_file(fname): write lines to file with proper line-endings'
+    """
+    @program: write lines to file with proper line-endings
+    @param: fname => filename
+    @ptype: string
+    """
 
     ls = os.linesep
     all = get_content()
     fobj = open(fname, 'w')
     fobj.writelines(['%s%s' % (x, ls) for x in all])
     fobj.close()
-    return True
 
-# read and display part
+
 def input_fname():
-    'input_fname(): input filename'
+    """
+    @program: input filename
+    @rtype: string
+    """
 
     return raw_input('Enter filename: ')
 
+
 def display(fname):
-    'display(fname): attempt to open file for reading and displaying'
+    """
+    @program: attempt to open file for reading and displaying
+    @param: fname => filename
+    @rparam: string
+    @return: true or false
+    @rtype: bool
+    """
 
     try:
         fobj = open(fname, 'r')
@@ -63,14 +85,16 @@ def display(fname):
         print "*** file open error:", e
         return False
     else:
-        # display contents to the screen
         for eachLine in fobj:
             print eachLine.strip()
         fobj.close()
         return True
 
+
 def main():
-    'main function'
+    """
+    @program: main function
+    """
 
     choice = ''
     while True:
@@ -83,7 +107,6 @@ def main():
             break
         else:
             choice = raw_input("Enter w to write and r to read: ")
-    return True
 
 
 if __name__ == '__main__':

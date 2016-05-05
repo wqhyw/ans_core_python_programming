@@ -1,7 +1,10 @@
 #! /usr/bin/env python
 
 def getinp():
-    'Get a valid integer'
+    """
+    @program: Get a valid integer
+    @return: the integer from raw_input()
+    """
 
     while True:
         inp = raw_input("Input minutes: ")
@@ -12,7 +15,11 @@ def getinp():
 
 
 def gethnm(minutes):
-    'Get hours and minutes'
+    """
+    @program: Get hours and minutes
+    @param: minutes
+    @return: time like (x h x m)
+    """
 
     return repr(minutes // 60) + ' h ' + repr(minutes % 60) + ' m'
 

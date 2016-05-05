@@ -1,7 +1,11 @@
 #! /usr/bin/env python
 
 def GCD(m, n):
-    'get GCD of m, n'
+    """
+    @program: get GCD of m, n
+    @param: m, n => two integer
+    @return: GCD of m and n
+    """
 
     while True:
         r = m % n
@@ -11,6 +15,12 @@ def GCD(m, n):
 
 
 def LCM(m, n):
+    """
+        @program: get LCM of m, n
+        @param: m, n => two integer
+        @return: LCM of m and n
+        """
+
     return m * n / GCD(m, n)
 
 

@@ -1,7 +1,10 @@
 #! /usr/bin/env python
 
 def getinp():
-    'Get a valid integer'
+    """
+    @program: Get a valid integer
+    @return: the integer from raw_input()
+    """
 
     while True:
         inp = raw_input("Input an integer between 0 and 1000(boundary included): ")
@@ -12,7 +15,12 @@ def getinp():
 
 
 def geteng(num):
-    'Make num into english'
+    """
+    @program: Make num into english
+    @param; num => a integer between 0 and 1000
+    @return: num in english
+    @rtype: string
+    """
 
     # base words
     bases = {
@@ -27,7 +35,7 @@ def geteng(num):
     }
 
     def handledozens(dozens):
-        'handle integer between 10 - 99'
+        # handle integer between 10 and 99
 
         if dozens in bases:
             if dozens != 0:

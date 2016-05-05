@@ -4,11 +4,20 @@ import string
 
 
 def transi(strin):
+    """
+    @program: make small letters in strin upper, big lower
+    @return: string transived
+    @rtype: string
+    """
+
     def cmp(letter):
+        # big letter lower, small letter upper
+
         if letter in string.letters[:25]:
             return string.upper(letter)
         else:
             return string.lower(letter)
+
     return ''.join(map(cmp, strin))
 
 

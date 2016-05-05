@@ -1,10 +1,8 @@
 #! /usr/bin/env python
 
 def payment(balance, monthly):
-    'get payment list'
 
     result = []
-
     while balance > 0:
         result.append(balance)
         balance -= monthly
@@ -15,7 +13,11 @@ def payment(balance, monthly):
 
 
 def prtpm(pmlist):
-    'print payment'
+    """
+    @program: print payment
+    @param: pmlist >=> payments
+    @tparam: list
+    """
 
     print "Amout remaining"
     print "Pymt#\tPaid\tBalance"
@@ -25,6 +27,7 @@ def prtpm(pmlist):
         if index > 0:
             delt = pmlist[index - 1] - pmlist[index]
         print " %2d \t$%.2f\t$%.2f" % (index,  delt, bl)
+
 
 def test():
     prtpm(payment(100, 16.13))

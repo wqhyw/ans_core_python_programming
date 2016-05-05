@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 
 def getAns(money):
+
     if money > 1 or money < 0:
         print "Invalid money."
     else:
