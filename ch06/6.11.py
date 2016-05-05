@@ -2,6 +2,7 @@
 
 def ipcheck(ip, ctype=0):
     'Check that if string ip is valid'
+    
     if ctype == 0:
         ip = ip.split('.')
         condition1 = (len(ip) == 4)
