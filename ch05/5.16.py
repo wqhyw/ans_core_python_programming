@@ -14,7 +14,7 @@ def payment(balance, monthly):
 
 def prtpm(pmlist):
     """
-    @program: print payment
+    @func: print payment
     @param: pmlist >=> payments
     @tparam: list
     """

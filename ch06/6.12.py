@@ -3,7 +3,7 @@
 # a) def findchr(string, char)
 def findchr(src, char):
     """
-    @program: find char's index of string
+    @func: find char's index of string
     @param: src => source string
             char => letter need to find index
     @tparam: string
@@ -25,7 +25,7 @@ def findchr(src, char):
 # b) def rfindchr(string, char)
 def rfindchr(src, char):
     """
-    @program: find last appearence of char
+    @func: find last appearence of char
     @param: src => source string
             char => letter need to find index
     @tparam: string
@@ -46,7 +46,7 @@ def rfindchr(src, char):
 # c) def subchar(string, origchar, newchar)
 def subchar(src, origchar, newchar):
     """
-    @program: find origcahr then replace it by newchar
+    @func: find origcahr then replace it by newchar
     @param: src => source string
             origchar => letter need to be found
             newchar => relacement when origcahr found

@@ -2,7 +2,7 @@
 
 def hourtomin(timebyhour):
     """
-    @program: make time like hour:minute to minute
+    @func: make time like hour:minute to minute
     @param: time like hour:minute
     @tparam: string
     @rtype: int

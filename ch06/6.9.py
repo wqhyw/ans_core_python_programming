@@ -2,7 +2,7 @@
 
 def getinp():
     """
-    @program: Get a valid integer
+    @func: Get a valid integer
     @return: the integer from raw_input()
     """
 
@@ -16,7 +16,7 @@ def getinp():
 
 def gethnm(minutes):
     """
-    @program: Get hours and minutes
+    @func: Get hours and minutes
     @param: minutes
     @return: time like (x h x m)
     """

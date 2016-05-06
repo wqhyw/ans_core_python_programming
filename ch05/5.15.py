@@ -2,7 +2,7 @@
 
 def GCD(m, n):
     """
-    @program: get GCD of m, n
+    @func: get GCD of m, n
     @param: m, n => two integer
     @return: GCD of m and n
     """
@@ -16,7 +16,7 @@ def GCD(m, n):
 
 def LCM(m, n):
     """
-        @program: get LCM of m, n
+        @func: get LCM of m, n
         @param: m, n => two integer
         @return: LCM of m and n
         """

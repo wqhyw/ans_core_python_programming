@@ -2,7 +2,7 @@
 
 def isleap(year):
     """
-    @program: check leap or not
+    @func: check leap or not
     @param: year
     @tparam: int
     @return: True or False
@@ -24,7 +24,7 @@ def isleap(year):
 
 
 def test():
-    print isleap(2015)
+    print isleap(1970)
 
 if __name__ == '__main__':
     test()

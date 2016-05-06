@@ -2,7 +2,7 @@
 
 def strtofloat(str):
     """
-    @program: make a string to float
+    @func: make a string to float
     @param: str
     @return: a flaot when succed or None when failed
     """
@@ -16,7 +16,7 @@ def strtofloat(str):
 
 def atoc(cpm):
     """
-    @program: make a string to a complex object
+    @func: make a string to a complex object
     @param: cpm => a string like (1+2j)
     @return: result
     @rtype: complex object

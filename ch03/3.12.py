@@ -5,7 +5,7 @@
 """
 Created on Fri Mar 11 19:31:58 2016
 
-@program: RnMTextFile.py -- create, read and display text file
+@func: RnMTextFile.py -- create, read and display text file
 
 @author: LeO_wqHyw
 """
@@ -15,7 +15,7 @@ import os
 
 def get_fname():
     """
-    @program: get filename
+    @func: get filename
     @return: filename
     @rtype: string
     """
@@ -31,7 +31,7 @@ def get_fname():
 
 def get_content():
     """
-    @program: get file content (text) lines
+    @func: get file content (text) lines
     @return: all => all contents
     @rtype: list
     """
@@ -49,7 +49,7 @@ def get_content():
 
 def create_file(fname):
     """
-    @program: write lines to file with proper line-endings
+    @func: write lines to file with proper line-endings
     @param: fname => filename
     @ptype: string
     """
@@ -63,7 +63,7 @@ def create_file(fname):
 
 def input_fname():
     """
-    @program: input filename
+    @func: input filename
     @rtype: string
     """
 
@@ -72,7 +72,7 @@ def input_fname():
 
 def display(fname):
     """
-    @program: attempt to open file for reading and displaying
+    @func: attempt to open file for reading and displaying
     @param: fname => filename
     @rparam: string
     @return: true or false
@@ -93,7 +93,7 @@ def display(fname):
 
 def main():
     """
-    @program: main function
+    @func: main function
     """
 
     choice = ''

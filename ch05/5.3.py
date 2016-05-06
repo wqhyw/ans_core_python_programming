@@ -2,7 +2,7 @@
 
 def getegrade(score):
     """
-    @program: get grade
+    @func: get grade
     @param: score
     @tparam: int
     @return: A or B or C or D or E

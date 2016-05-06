@@ -5,7 +5,7 @@ from random import randint as ri
 
 def getinp():
     """
-    @program: get user's chioce
+    @func: get user's chioce
     @return: 0 => rock, 1 => paper, 2 => scissors
     @rtype: int
     """
@@ -21,7 +21,7 @@ def getinp():
 
 def cominp():
     """
-    @program: get computer's choice
+    @func: get computer's choice
     @return: 0 => rock, 1 => paper, 2 => scissors
     @rtype: int
     """
@@ -29,33 +29,32 @@ def cominp():
     return ri(0, 2)
 
 
-def cmp(uinp, cinp):
+def Rochambeau(uinp, cinp):
     """
-    @program: campare computer and user's choice
+    @func: campare computer and user's choice
     @param: uinp => user input
     @param: cinp => computer input
-    @return: 0 => user win
-             1 => equal
-             2 => computer win
+    @return: user win or deuce or computer win
+    @rtype: string
     """
 
     cmplist = [[1, 0, 2], [2, 1, 0], [0, 2, 1]]
-    return cmplist[uinp][cinp]
+    result = ['You win!', 'Deuce', 'You lose!']
+    return result[cmplist[uinp][cinp]]
 
 
 def main():
     """
-    @program: main function
+    @func: main function
     """
 
-    cinp = getinp()
-    uinp = cominp()
+    uinp = getinp()
+    cinp = cominp()
     src = ['rock', 'paper', 'scissors']
-    result = ['You win!', 'Equal', 'You lose']
 
     print "Your choice:", src[uinp]
     print "Computer's choice:", src[cinp]
-    print result[cmp(uinp, cinp)]
+    print Rochambeau(uinp, cinp)
 
 
 if __name__ =='__main__':

@@ -2,7 +2,7 @@
 
 def snc(str1, str2):
     """
-    @program: campare two string by dictionary
+    @func: campare two string by dictionary
     @param: srt1, str2
     @tparam: string
     @return: 1 for str1 > str2, -1 for str1 < str1, 0 for equal

@@ -2,7 +2,7 @@
 
 def ipcheck(ip, ctype=0):
     """
-    @program: Check that if string is a valid ip
+    @func: Check that if string is a valid ip
     @param: ctype == 0 then ip => an ip address like www.xxx.yyy.zzz
             ctype != 0 then ip => a hex-integer
     @return: True for valid, False for invalid
@@ -26,7 +26,7 @@ def ipcheck(ip, ctype=0):
 
 def iptobi(ip):
     """
-    @program: make an ip address in dotted decimal notation to a hex-integer
+    @func: make an ip address in dotted decimal notation to a hex-integer
     @param: ip => an ip address in dotted decimal notation
     @tparam: string
     @return: ipint => a hex-integer
@@ -48,7 +48,7 @@ def iptobi(ip):
 
 def bitoip(ip):
     """
-    @program: make a hex-integer to an ip address in dotted decimal notation
+    @func: make a hex-integer to an ip address in dotted decimal notation
     @param: ip => a hex-integer
     @tparam: string
     @return: None => when param invalid

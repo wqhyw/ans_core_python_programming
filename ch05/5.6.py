@@ -2,7 +2,7 @@
 
 def isnumber(num):
     """
-    @program: Check num is a integer or float
+    @func: Check num is a integer or float
     @param: num => a string only including number
     @tparam: string
     @return: 0 or 1 or 2
@@ -23,7 +23,7 @@ def isnumber(num):
 
 def strtonum(str, strtype):
     """
-    @program: transform string to number
+    @func: transform string to number
     @param: str => a string only including nummber
             strtype => 0 for int, 1 for float
     @return: nummber when succeed or None when failed
@@ -56,7 +56,7 @@ def getexpression():
 
 def simplecal(expression):
     """
-    @program: Calculate the expression like (x op y)
+    @func: Calculate the expression like (x op y)
     @param: expreesion => a valid expression like (x op y)
     @return: result after calculated
     """

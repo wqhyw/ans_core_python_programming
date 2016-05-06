@@ -2,7 +2,7 @@
 
 def getgrade(score):
     """
-    @program: get grade by score
+    @func: get grade by score
     @param: score
     @tparam: int
     @return: grade in A,B,C,D,E

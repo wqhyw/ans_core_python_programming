@@ -2,7 +2,7 @@
 
 def getinp():
     """
-    @program: Get a valid integer
+    @func: Get a valid integer
     @return: the integer from raw_input()
     """
 
@@ -16,7 +16,7 @@ def getinp():
 
 def geteng(num):
     """
-    @program: Make num into english
+    @func: Make num into english
     @param; num => a integer between 0 and 1000
     @return: num in english
     @rtype: string

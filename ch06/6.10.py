@@ -5,7 +5,7 @@ import string
 
 def transi(strin):
     """
-    @program: make small letters in strin upper, big lower
+    @func: make small letters in strin upper, big lower
     @return: string transived
     @rtype: string
     """
