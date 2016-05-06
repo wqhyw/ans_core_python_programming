@@ -2,21 +2,21 @@
 
 def strtofloat(str):
     """
-    @progam: make a string to float
+    @program: make a string to float
     @param: str
     @return: a flaot when succed or None when failed
     """
     for x in str.split('.'):
-        if x.isdigit() == False:
-            print "Invalid param"
-            return 0
+        if x.isdigit():
+            return float(str)
     else:
-        return float(str)
+        print "Invalid param"
+        return 0
 
 
 def atoc(cpm):
     """
-    @program: makea string to a complex object
+    @program: make a string to a complex object
     @param: cpm => a string like (1+2j)
     @return: result
     @rtype: complex object
