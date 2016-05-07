@@ -12,6 +12,7 @@ def getAns(money):
         cent1 = cent5[1]
     return cent25[0], cent10[0], cent5[0], cent1
 
+
 def test():
     ans = getAns(0.99)
     print "25 cent: ", ans[0]

@@ -24,7 +24,7 @@ def isleap(year):
 
 
 def test():
-    print isleap(1970)
+    print isleap(1004)
 
 if __name__ == '__main__':
     test()
