@@ -121,7 +121,7 @@ def test():
     print delt('01/01/1995', '02/01/1995')
     print delt('18/10/1994', '07/05/2015')
     print delt('08/07/1995', '07/05/2015')
-    print delt('32/03/123','32/03/123/')
+    print 'delt: ', delt('08/07/1995','01/11/1996')
     print delt('dfasfd', 'afd')
     print getbirdelt()
     print getnextbir()

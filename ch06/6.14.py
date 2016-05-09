@@ -38,7 +38,7 @@ def Rochambeau(uinp, cinp):
     @rtype: string
     """
 
-    cmplist = [[1, 0, 2], [2, 1, 0], [0, 2, 1]]
+    cmplist = [[1, 2, 0], [0, 1, 2], [2, 0, 1]]
     result = ['You win!', 'Deuce', 'You lose!']
     return result[cmplist[uinp][cinp]]
 
