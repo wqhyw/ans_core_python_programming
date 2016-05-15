@@ -93,11 +93,17 @@ def matrixmul(M, N):
 
 
 def test():
-    print __addcheck([[1], [3, 4]], [[5], [7, 8]])
-    print matrixadd([[1, 2], [2, 3]], [[5, 6], [7, 8]])
-    print matrixmul([[1, 2], [3, 4]], [[5, 6], [7, 8]])
-    print matrixmul([[1, 1], [1, 1], [1, 1]], [[1, 1, 1], [1, 1, 1]])
-
+    # print __addcheck([[1], [3, 4]], [[5], [7, 8]])
+    # print matrixadd([[1, 2], [2, 3]], [[5, 6], [7, 8]])
+    # print matrixmul([[1, 2], [3, 4]], [[5, 6], [7, 8]])
+    # print matrixmul([[1, 1], [1, 1], [1, 1]], [[1, 1, 1], [1, 1, 1]])
+    a = [[0.314, 0.507, 0.179]]
+    b = [
+        [0.1, 0.4, 0.5],
+        [0.5, 0.3, 0.2],
+        [0.4, 0.3, 0.3]
+    ]
+    print matrixmul(a, b)
 
 if __name__ == '__main__':
     test()
