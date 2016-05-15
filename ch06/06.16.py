@@ -105,5 +105,6 @@ def test():
     ]
     print matrixmul(a, b)
 
+
 if __name__ == '__main__':
     test()
