@@ -1,10 +1,21 @@
 #!/usr/bin/env python
-# TODO: GUI
 
 import hashlib
 
 db = {}
 logtime = {}
+
+def namecheck(name):
+    """
+    @program: check if name only contains letters
+    @rtype: True for valid, False for invalid
+    """
+    for x in name:
+        if ord('a') >= ord(x) or ord(x) >= ord('z'):
+            return False
+    else:
+        return True
+
 
 def newuser():
 
@@ -13,15 +24,16 @@ def newuser():
     """
     prompt = 'login desired: '
     while True:
-        name = raw_input(prompt)
-        if db.has_key(name):
-            prompt = 'name taken, try another: '
+        name = raw_input(prompt).lower()
+        if namecheck(name):
+            if db.has_key(name):
+                prompt = 'name taken, try another: '
+            else:
+                pwd = raw_input('passwd: ')
+                db[name] = hashlib.new('md5', pwd).hexdigest()
+                break
         else:
-            break
-    pwd = raw_input('passwd: ')
-
-    import hashlib
-    db[name] = hashlib.new('md5', pwd).hexdigest()
+            prompt = 'Only letters valid! try anthor: '
 
 
 def olduser():
@@ -29,7 +41,7 @@ def olduser():
     @program: login and add timestamp
     """
 
-    name = raw_input('login: ')
+    name = raw_input('login: ').lower()
     if name not in db:
         print 'user do not exists.'
         return
