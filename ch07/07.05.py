@@ -1,5 +1,8 @@
 #!/usr/bin/env python
-# TODO
+# TODO: GUI
+
+import hashlib
+
 db = {}
 logtime = {}
 
@@ -16,7 +19,9 @@ def newuser():
         else:
             break
     pwd = raw_input('passwd: ')
-    db[name] = pwd
+
+    import hashlib
+    db[name] = hashlib.new('md5', pwd).hexdigest()
 
 
 def olduser():
@@ -30,6 +35,7 @@ def olduser():
         return
 
     pwd = raw_input('passwd: ')
+    pwd = hashlib.new('md5', pwd).hexdigest()
     passwd = db.get(name)
     if passwd == pwd:
         print 'welcome back', name
@@ -74,7 +80,7 @@ def manage():
         if choice == 'p':
             print 'All users:',
             for x in db.keys():
-                print x,
+                print x
             print
 
         elif choice == 'd':
