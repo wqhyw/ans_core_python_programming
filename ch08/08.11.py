@@ -83,9 +83,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# Hamilton, Gerald
-# Royce, Linda
-# Salem, Winston
-# Smith, Joe
-# Wong, Mary

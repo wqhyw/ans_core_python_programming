@@ -3,7 +3,7 @@
 def getegrade(score):
     """
     @func: get grade
-    @param: score
+    @param: score.txt
     @tparam: int
     @return: A or B or C or D or E
     @rtype: char

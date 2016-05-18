@@ -2,8 +2,8 @@
 
 def getgrade(score):
     """
-    @func: get grade by score
-    @param: score
+    @func: get grade by score.txt
+    @param: score.txt
     @tparam: int
     @return: grade in A,B,C,D,E
     @rtype: char

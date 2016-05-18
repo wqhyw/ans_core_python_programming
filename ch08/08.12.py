@@ -1,6 +1,5 @@
 #! /usr/bin/env python
 
-
 def main():
     done = False
     begin = 0
