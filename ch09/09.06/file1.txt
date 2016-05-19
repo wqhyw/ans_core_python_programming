@@ -1,0 +1,39 @@
+#! /usr/bin/env python
+
+def diff(file1, file2):
+    """
+    @program: compare file1 and file1, return different line #
+    @param: file1, file2 => filenames, path including
+    @return: res => include tuples
+    @rtype: tuple
+    """
+
+    res = list()
+    try:
+        fd1 = open(file1, 'r')
+        fd2 = open(file2, 'r')
+        linesoffd1 = (line for line in fd1)
+        linesoffd2 = (line for line in fd2)
+        row = 0
+        col = 0
+        for lineoffd1, lineoffd2 in zip(linesoffd1,linesoffd2):
+            row += 1
+            if lineoffd1 != lineoffd2:
+                res.append(row)
+
+        fd1.close()
+        fd2.close()
+    except IOError:
+        print "File open failed."
+    finally:
+        res = tuple(res)
+        return res
+
+
+
+def test():
+    diff('f1', 'f2')
+
+
+if __name__ == '__main__':
+    test()
