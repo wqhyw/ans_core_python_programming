@@ -42,13 +42,14 @@ u. undo
 r. back
 """
     callbacks = dict(a=savings.add_deposit,
-                 b=savings.add_withdrawal,
-                 c=savings.show_remains,
-                 d=savings.show_all_records,
-                 e=savings.show_deposit_records,
-                 f=savings.show_withdrawal_recors,
-                 u=savings.undo,
-                 r=savings.back)
+                     b=savings.add_withdrawal,
+                     c=savings.show_remains,
+                     d=savings.show_all_records,
+                     e=savings.show_deposit_records,
+                     f=savings.show_withdrawal_recors,
+                     u=savings.undo,
+                     r=savings.back)
+
     menu(promote, **callbacks)
 
 def checkings_menu():
@@ -153,9 +154,10 @@ r. exit
 
     menu(promote, **callbacks)
 
+
 def exit_():
     pass
 
+
 def do():
     print "do called."
-
