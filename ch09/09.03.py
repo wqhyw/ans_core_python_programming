@@ -20,8 +20,8 @@ def countlines(filename):
 
 
 def main():
-    print countlines('09.01')
-    print countlines('09.02.py')
+    print countlines('09.10.01')
+    print countlines('09.10.02.py')
 
 
 if __name__ == '__main__':

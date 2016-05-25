@@ -16,7 +16,7 @@ def ignorecommnet(line):
 
 
 def main():
-    f = open(r'../ch08/08.09.py', 'r')
+    f = open(r'../ch08/08.09.10.py', 'r')
     index = 0
     for line in f:
         index += 1
